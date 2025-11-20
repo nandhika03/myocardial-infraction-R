@@ -1,4 +1,4 @@
-# ❤️ Myocardial Infarction Complications Prediction - R Project 📈
+# ❤️ Myocardial Infarction Complications Prediction - R Project 
 
 I worked on this project as part of my **Predictive Modelling** course final project. This course was a game-changer for me, offering deep insights into R and the mathematics behind predictive algorithms. 💡
 
