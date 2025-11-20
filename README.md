@@ -34,8 +34,10 @@ Despite heart disease prediction being a common theme in the data science world,
 ## 📂 Files Included:
 1. **Dataset**: Contains predictors and target variables.  
 2. **Predictor Descriptions**: Detailed explanations of each feature.  
-3. **Final Report**: Comprehensive analysis of our approach and results.  
+3. **Final Report**: Comprehensive analysis of our approach and results (INCLUDES FULL R CODE for building all models) 
 4. **Presentation Slides**: Summary of the project for our class presentation. 🎤
+5. **Preprocessing code**: Includes all R codes used to develop the pre-processing
+
 
 ---
 
