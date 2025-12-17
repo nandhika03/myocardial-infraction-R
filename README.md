@@ -10,7 +10,7 @@ This study focuses on predicting chronic heart failure (ZSN) using a dataset col
 #### Why This Project?
 The [dataset](https://github.com/nandhika03/myocardial-infraction-R/tree/main/Datasets) we chose is open-source and available [here](https://archive.ics.uci.edu/dataset/579/myocardial+infarction+complications).  
 The requirement of the course project was to identify open-source datasets that had high dimensionality. Hence, we chose to go with this dataset. The strcuture of the dataset and descriptions of clinical features can be found [here](https://github.com/nandhika03/myocardial-infraction-R/blob/main/Datasets/Descriptive%20statistics.pdf).
----
+
 #### What was the Goal of this Project?
 The primary goal of this project is to to evaluate and compare the performance of various linear and non-linear predictive models, providing insights into the most effective approaches for addressing the challenges posed by imbalanced datasets and diverse clinical variables.
 The secondary goal of this project is to predict chronic heart failure (ZSN) complications in patients who have experienced myocardial infarction (MI) using clinical data collected during hospitalization. By identifying high-risk patients early, this research aims to enhance critical care management, facilitate timely preventive measures, and improve long-term patient outcomes.
