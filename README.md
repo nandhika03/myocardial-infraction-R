@@ -41,5 +41,9 @@ This project was a collaborative effort with my teammate **Ganesh**. Working tog
 - DOCUMENTATION NEEDS TO BE ALL ALONG THE PROJECT
 - Medical data is sure complex to deal with!
 
+#### Resources: 
+- The complete code for this project can be found [here](https://github.com/nandhika03/myocardial-infraction-R/tree/main/Rcodes). R studio was used for all code execution
+- All about the datasets, and to download the dataset, click [here]([url](https://github.com/nandhika03/myocardial-infraction-R/tree/main/Datasets))
+- As this was a course project, a midtermupdate file and a final presentation file along will all the reports can be found [here](https://github.com/nandhika03/myocardial-infraction-R/tree/main/Findings%26Reports)
 For more details, check out our files!  
 _Happy Predicting!_
