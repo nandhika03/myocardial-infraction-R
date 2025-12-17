@@ -1,12 +1,19 @@
 ## Myocardial Infarction Complications Prediction: Course Project MA5790 (Predictive Modelling)
-
-I worked on this project as part of my **Predictive Modelling** course final project. This course was a game-changer for me, offering deep insights into R and the mathematics behind predictive models. I later went on to become the Teaching assistant for the same course in the Fall of 2025. 
-
 #### Note: As this was a course project, all methods taught in the course were supposed to be executed and tested, hence the results did not matter. 
+I worked on this project as part of my **Predictive Modelling** course final project. This course was a game-changer for me, offering deep insights into R and the mathematics behind predictive models. I later went on to become the Teaching assistant for the same course in the Fall of 2025. 
 
 #### Summary:
 This study focuses on predicting chronic heart failure (ZSN) using a dataset collected in Krasnoyarsk between 1992 and 1995, consisting of 1,700 patients with 122 variables, including 14 continuous and 108 categorical predictors. Data preprocessing involved addressing 15,794 missing values using KNN imputation, removing near-zero variance features, and applying Box-Cox and Spatial Sign transformations to handle skewness and outliers, resulting in 81 features for analysis. Models were evaluated using stratified random sampling, 10-fold cross-validation, and the Kappa metric to address the imbalanced target variable. Partial Least Squares Discriminant Analysis (PLSDA) achieved the highest performance among linear models with a testing Kappa value of 0.3842, followed by Logistic Regression with a Kappa value of 0.357. _The predictive ability of the model is not upto the mark and needs a lot of training and adjusting of pre-processing methods_. This model cannot be used for clinical predictability. 
 
+#### Models built and their results:
+The Linear models that have been built here involve a common preprocessing which is centering and scaling. Additionally, for the Logistic Regression and Linear Discriminant Analysis model, highly correlated features have been removed with a cut-off of 75%, whereas the Partial Least Squares Discriminant Analysis and Penalized Models has the capability to handle correlated predictors. The results are tabulated as follows: ![LINEAR MODELS](https://github.com/nandhika03/myocardial-infraction-R/blob/main/Findings%26Reports/Screenshot%202025-12-17%20070615.png)
+
+
+The Partial Least Squares Discriminant Analysis (PLSDA) and Logistic Regression models achieved the highest testing Kappa values, 0.3842 and 0.357, respectively. PLSDA has the added advantage of performing feature selection through its components. Given its higher Kappa value and feature selection capability, we consider PLSDA the best model. Logistic Regression, while effective, does not offer the same feature selection benefit. PLSDA’s ability to handle complex datasets with many predictors makes it a better fit for this study. Therefore, we will proceed with PLSDA as the preferred model. 
+
+The non-linear also undergo a common centering and scaling preprocessing, except for the Naive Bayes model. The high correlated predictors are removed for the neural networks, Quadratic Discriminant Analysis, Mixture Discriminant Analysis and Naive Bayes. The neural network model is tested for two cases: with spatial Sign and without spatial Sign. The difference in the kappa value with spatial Sign was slightly higher than the latter. The Box-Cox transformation is being applied on the predictors only in the Naive Bayes model. The results are tabulated as follows: ![non-linear models](https://github.com/nandhika03/myocardial-infraction-R/blob/main/Findings%26Reports/Screenshot%202025-12-17%20070633.png)
+
+Mixture Discriminant Analysis (MDA) emerged as the best-performing non-linear model; however, its testing Kappa value was lower than that of Partial Least Squares Discriminant Analysis (PLSDA) and Logistic Regression, which were the best overall models due to their higher testing Kappa values.  
 #### Why This Project?
 The [dataset](https://github.com/nandhika03/myocardial-infraction-R/tree/main/Datasets) we chose is open-source and available [here](https://archive.ics.uci.edu/dataset/579/myocardial+infarction+complications).  
 The requirement of the course project was to identify open-source datasets that had high dimensionality. Hence, we chose to go with this dataset. The strcuture of the dataset and descriptions of clinical features can be found [here](https://github.com/nandhika03/myocardial-infraction-R/blob/main/Datasets/Descriptive%20statistics.pdf).
@@ -24,16 +31,6 @@ The secondary goal of this project is to predict chronic heart failure (ZSN) com
 
 #### Evaluation Metric:
 Each model will be trained and evaluated using the dataset to assess its effectiveness in achieving the desired predictive outcomes. A 10-fold cross-validation method is applied for resampling and optimizing the model's hyperparameters. The evaluation metric selected for this study is the ** Kappa** value, as it accounts for the imbalance in the target variable's distribution and provides an unbiased measure of model performance.
-
-#### Models built and their results:
-The Linear models that have been built here involve a common preprocessing which is centering and scaling. Additionally, for the Logistic Regression and Linear Discriminant Analysis model, highly correlated features have been removed with a cut-off of 75%, whereas the Partial Least Squares Discriminant Analysis and Penalized Models has the capability to handle correlated predictors. The results are tabulated as follows: ![LINEAR MODELS](https://github.com/nandhika03/myocardial-infraction-R/blob/main/Findings%26Reports/Screenshot%202025-12-17%20070615.png)
-
-
-The Partial Least Squares Discriminant Analysis (PLSDA) and Logistic Regression models achieved the highest testing Kappa values, 0.3842 and 0.357, respectively. PLSDA has the added advantage of performing feature selection through its components. Given its higher Kappa value and feature selection capability, we consider PLSDA the best model. Logistic Regression, while effective, does not offer the same feature selection benefit. PLSDA’s ability to handle complex datasets with many predictors makes it a better fit for this study. Therefore, we will proceed with PLSDA as the preferred model. 
-
-The non-linear also undergo a common centering and scaling preprocessing, except for the Naive Bayes model. The high correlated predictors are removed for the neural networks, Quadratic Discriminant Analysis, Mixture Discriminant Analysis and Naive Bayes. The neural network model is tested for two cases: with spatial Sign and without spatial Sign. The difference in the kappa value with spatial Sign was slightly higher than the latter. The Box-Cox transformation is being applied on the predictors only in the Naive Bayes model. The results are tabulated as follows: ![non-linear models](https://github.com/nandhika03/myocardial-infraction-R/blob/main/Findings%26Reports/Screenshot%202025-12-17%20070633.png)
-
-Mixture Discriminant Analysis (MDA) emerged as the best-performing non-linear model; however, its testing Kappa value was lower than that of Partial Least Squares Discriminant Analysis (PLSDA) and Logistic Regression, which were the best overall models due to their higher testing Kappa values.  
 
 #### Collaboration:
 This project was a collaborative effort with my teammate **Ganesh**. Working together made the entire process enjoyable and insightful.
