@@ -1,7 +1,8 @@
-# ❤️ Myocardial Infarction Complications Prediction - R Project 
+## Myocardial Infarction Complications Prediction: Course Project MA5790 (Predictuve Modelling)
 
-I worked on this project as part of my **Predictive Modelling** course final project. This course was a game-changer for me, offering deep insights into R and the mathematics behind predictive algorithms. 💡
+I worked on this project as part of my **Predictive Modelling** course final project. This course was a game-changer for me, offering deep insights into R and the mathematics behind predictive models. I later went on to become the Teaching assistant for the same course in the Fall of 2025. 
 
+#### Note: As this was a course project, all methods taught in the course were supposed to be executed and tested, hence the results did not matter. 
 ---
 
 ## 🧠 Why This Project?
