@@ -3,11 +3,10 @@
 I worked on this project as part of my **Predictive Modelling** course final project. This course was a game-changer for me, offering deep insights into R and the mathematics behind predictive models. I later went on to become the Teaching assistant for the same course in the Fall of 2025. 
 
 #### Note: As this was a course project, all methods taught in the course were supposed to be executed and tested, hence the results did not matter. 
----
-#### Summary:
 
+#### Summary:
 This study focuses on predicting chronic heart failure (ZSN) using a dataset collected in Krasnoyarsk between 1992 and 1995, consisting of 1,700 patients with 122 variables, including 14 continuous and 108 categorical predictors. Data preprocessing involved addressing 15,794 missing values using KNN imputation, removing near-zero variance features, and applying Box-Cox and Spatial Sign transformations to handle skewness and outliers, resulting in 81 features for analysis. Models were evaluated using stratified random sampling, 10-fold cross-validation, and the Kappa metric to address the imbalanced target variable. Partial Least Squares Discriminant Analysis (PLSDA) achieved the highest performance among linear models with a testing Kappa value of 0.3842, followed by Logistic Regression with a Kappa value of 0.357.
----
+
 #### Why This Project?
 The [dataset](https://github.com/nandhika03/myocardial-infraction-R/tree/main/Datasets) we chose is open-source and available [here](https://archive.ics.uci.edu/dataset/579/myocardial+infarction+complications).  
 The requirement of the course project was to identify open-source datasets that had high dimensionality. Hence, we chose to go with this dataset. The strcuture of the dataset and descriptions of clinical features can be found [here](https://github.com/nandhika03/myocardial-infraction-R/blob/main/Datasets/Descriptive%20statistics.pdf).
