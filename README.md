@@ -35,7 +35,7 @@ The non-linear also undergo a common centering and scaling preprocessing, except
 Mixture Discriminant Analysis (MDA) emerged as the best-performing non-linear model; however, its testing Kappa value was lower than that of Partial Least Squares Discriminant Analysis (PLSDA) and Logistic Regression, which were the best overall models due to their higher testing Kappa values.  
 
 #### Collaboration:
-This project was a collaborative effort with my teammate **Ganesh**. Working together made the entire process enjoyable and insightful. 🙌
+This project was a collaborative effort with my teammate **Ganesh**. Working together made the entire process enjoyable and insightful.
 
 #### Key Learnings:
 - Not all models work on data in the same way
@@ -44,4 +44,4 @@ This project was a collaborative effort with my teammate **Ganesh**. Working tog
 - Medical data is sure complex to deal with!
 
 For more details, check out our files!  
-🎉 **Happy Predicting!** 🎉
+_Happy Predicting!_
